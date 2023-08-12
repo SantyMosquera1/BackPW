@@ -22,3 +22,18 @@ If you discover a security vulnerability within Lumen, please send an e-mail to 
 ## License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## Para poner en marcha el API, sigue estos pasos:
+
+## Configuración de la Base de Datos: Primero, crea una nueva base de datos en MySQL manualmente. No necesitas crear tablas, ya que el API las generará automáticamente. Asegúrate de tener los detalles de conexión: nombre de la base de datos, nombre de usuario, host y contraseña.
+
+## Configuración de Conexión: En el archivo de configuración de la aplicación ".env", establece los detalles de conexión a la base de datos, incluyendo el nombre de la base de datos, el nombre de usuario, el host y la contraseña.
+
+## Composer: Asegúrate de tener instalado Composer, ya que es necesario para gestionar las dependencias de la aplicación.
+
+## Migraciones: Ejecuta el comando "php artisan migrate" en la línea de comandos. Esto creará automáticamente las tablas requeridas en la base de datos.
+
+## Iniciar el Servidor: Finalmente, ejecuta el comando "php -S localhost:8000 -t public" en la línea de comandos. Esto iniciará el servidor y pondrá en funcionamiento todo el proceso.
+
+## Siguiendo estos pasos, tendrás el API listo para usar y conectado a la base de datos que has creado.
